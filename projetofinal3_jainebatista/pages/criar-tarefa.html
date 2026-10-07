@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistema Gerenciador de Tarefas">
+    <title>Criar Tarefa | Sistema Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-pagina="criar-tarefa" data-interna="sim">
+    <input type="checkbox" id="tema" class="controle-tema">
+    <label for="tema" class="botao-tema" aria-label="Alternar tema" title="Alternar tema">
+        <span class="icone-claro" aria-hidden="true">☀️</span>
+        <span class="icone-escuro" aria-hidden="true">🌙</span>
+    </label>
+
+    <div class="pagina pagina-interna">
+        <div class="layout-interno">
+            <aside class="sidebar">
+                <h2>Sistema de Gerenciamento de Tarefas</h2>
+                <nav class="navegacao" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="dashboard.html">Minhas Tarefas</a></li>
+                        <li><a href="criar-tarefa.html" aria-current="page">Criar Tarefa</a></li>
+                        <li><a href="configuracoes.html">Configurações</a></li>
+                        <li><a href="../index.html" data-acao="sair">Sair</a></li>
+                    </ul>
+                </nav>
+                <p class="sidebar-rodape">© 2025 Projeto Acadêmico</p>
+            </aside>
+            <main class="conteudo-interno">
+                <header class="cabecalho-interno">
+                    <h1>Criar Tarefa</h1>
+                </header>
+                <section class="cartao cartao-formulario" aria-labelledby="titulo-criar">
+                    <h2 id="titulo-criar" class="titulo-cartao">Criar Tarefa</h2>
+
+                    <form id="form-tarefa" action="dashboard.html" method="get" novalidate>
+                        <div class="grupo-formulario">
+                            <label for="titulo">Título da Tarefa</label>
+                            <input class="campo" type="text" id="titulo" name="titulo">
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="descricao">Descrição (Opcional)</label>
+                            <textarea class="campo" id="descricao" name="descricao"></textarea>
+                        </div>
+
+                        <div class="acoes-formulario">
+                            <button class="botao botao-primario" type="submit">Salvar Tarefa</button>
+                            <a class="botao botao-secundario" href="dashboard.html">Cancelar</a>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="../js/app.js" defer></script>
+</body>
+</html>

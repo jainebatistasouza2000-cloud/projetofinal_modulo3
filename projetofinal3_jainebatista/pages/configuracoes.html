@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistema Gerenciador de Tarefas">
+    <title>Configurações | Sistema Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-pagina="configuracoes" data-interna="sim">
+    <input type="checkbox" id="tema" class="controle-tema">
+    <label for="tema" class="botao-tema" aria-label="Alternar tema" title="Alternar tema">
+        <span class="icone-claro" aria-hidden="true">☀️</span>
+        <span class="icone-escuro" aria-hidden="true">🌙</span>
+    </label>
+
+    <div class="pagina pagina-interna">
+        <div class="layout-interno">
+            <aside class="sidebar">
+                <h2>Sistema de Gerenciamento de Tarefas</h2>
+                <nav class="navegacao" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="dashboard.html">Minhas Tarefas</a></li>
+                        <li><a href="criar-tarefa.html">Criar Tarefa</a></li>
+                        <li><a href="configuracoes.html" aria-current="page">Configurações</a></li>
+                        <li><a href="../index.html" data-acao="sair">Sair</a></li>
+                    </ul>
+                </nav>
+                <p class="sidebar-rodape">© 2025 Projeto Acadêmico</p>
+            </aside>
+            <main class="conteudo-interno">
+                <header class="cabecalho-interno">
+                    <h1>Configurações</h1>
+                </header>
+                <section class="cartao cartao-detalhes" aria-labelledby="titulo-config">
+                    <h2 id="titulo-config">Sua conta</h2>
+                    <dl class="lista-detalhes">
+                        <dt>Email:</dt>
+                        <dd id="config-email"></dd>
+                    </dl>
+                    <p class="texto-apoio texto-pagina">Os dados ficam salvos apenas neste navegador. Use o botão abaixo para voltar às tarefas de exemplo.</p>
+                    <div class="acoes-formulario">
+                        <button class="botao botao-secundario" id="restaurar-exemplos" type="button">Restaurar tarefas de exemplo</button>
+                        <a class="botao botao-primario" href="dashboard.html">Voltar para a Lista</a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="../js/app.js" defer></script>
+</body>
+</html>

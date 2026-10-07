@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistema Gerenciador de Tarefas">
+    <title>Login | Sistema de Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="login">
+    <input type="checkbox" id="tema" class="controle-tema">
+    <label for="tema" class="botao-tema" aria-label="Alternar tema" title="Alternar tema">
+        <span class="icone-claro" aria-hidden="true">☀️</span>
+        <span class="icone-escuro" aria-hidden="true">🌙</span>
+    </label>
+
+    <div class="pagina pagina-publica">
+        <header class="cabecalho-publico">
+            <p class="nome-sistema">Sistema de Gerenciamento de Tarefas</p>
+        </header>
+        <main class="conteudo-publico">
+            <section class="cartao cartao-formulario" aria-labelledby="titulo-login">
+                <h1 id="titulo-login" class="titulo-cartao">Bem-vindo de volta!</h1>
+                <form id="form-login" action="pages/dashboard.html" method="get" novalidate>
+                    <div class="grupo-formulario">
+                        <label for="email">Email</label>
+                        <input class="campo" type="email" id="email" name="email" autocomplete="email">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="senha">Senha</label>
+                        <input class="campo" type="password" id="senha" name="senha" autocomplete="current-password">
+                    </div>
+                    <div class="acoes-formulario">
+                        <button class="botao botao-primario" type="submit">Entrar</button>
+                    </div>
+                    <p class="link-formulario">Não tem uma conta? <a href="pages/cadastro.html">Cadastre-se</a></p>
+                </form>
+            </section>
+        </main>
+        <footer class="rodape-publico">
+            <p>© 2025 Projeto Acadêmico | <a href="pages/termos.html">Termos de Uso</a></p>
+        </footer>
+    </div>
+    <script src="js/app.js" defer></script>
+</body>
+</html>

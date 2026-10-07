@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistema Gerenciador de Tarefas">
+    <title>Detalhes da Tarefa | Sistema Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-pagina="detalhes" data-interna="sim">
+    <input type="checkbox" id="tema" class="controle-tema">
+    <label for="tema" class="botao-tema" aria-label="Alternar tema" title="Alternar tema">
+        <span class="icone-claro" aria-hidden="true">☀️</span>
+        <span class="icone-escuro" aria-hidden="true">🌙</span>
+    </label>
+
+    <div class="pagina pagina-interna">
+        <div class="layout-interno">
+            <aside class="sidebar">
+                <h2>Sistema de Gerenciamento de Tarefas</h2>
+                <nav class="navegacao" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="dashboard.html" aria-current="page">Minhas Tarefas</a></li>
+                        <li><a href="criar-tarefa.html">Criar Tarefa</a></li>
+                        <li><a href="configuracoes.html">Configurações</a></li>
+                        <li><a href="../index.html" data-acao="sair">Sair</a></li>
+                    </ul>
+                </nav>
+                <p class="sidebar-rodape">© 2025 Projeto Acadêmico</p>
+            </aside>
+            <main class="conteudo-interno">
+                <header class="cabecalho-interno">
+                    <h1>Detalhes da Tarefa</h1>
+                    <a class="botao botao-secundario" href="dashboard.html">Voltar para a Lista</a>
+                </header>
+                <article class="cartao cartao-detalhes">
+                    <h2 id="detalhe-titulo"></h2>
+
+                    <dl class="lista-detalhes">
+                        <dt>Status:</dt>
+                        <dd id="detalhe-status"></dd>
+
+                        <dt>Criada em:</dt>
+                        <dd id="detalhe-data"></dd>
+                    </dl>
+
+                    <section class="descricao-detalhada" aria-labelledby="titulo-descricao">
+                        <h2 id="titulo-descricao">Descrição</h2>
+                        <p id="detalhe-descricao"></p>
+                    </section>
+
+                    <div class="acoes-formulario">
+                        <a class="botao botao-primario" id="link-editar" href="dashboard.html">Editar Tarefa</a>
+                        <button class="botao botao-perigo" id="botao-excluir" type="button">Excluir Tarefa</button>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+    <script src="../js/app.js" defer></script>
+</body>
+</html>

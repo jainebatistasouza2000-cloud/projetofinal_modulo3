@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistema Gerenciador de Tarefas">
+    <title>Minhas Tarefas | Sistema Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-pagina="dashboard" data-interna="sim">
+    <input type="checkbox" id="tema" class="controle-tema">
+    <label for="tema" class="botao-tema" aria-label="Alternar tema" title="Alternar tema">
+        <span class="icone-claro" aria-hidden="true">☀️</span>
+        <span class="icone-escuro" aria-hidden="true">🌙</span>
+    </label>
+
+    <div class="pagina pagina-interna">
+        <div class="layout-interno">
+            <aside class="sidebar">
+                <h2>Sistema de Gerenciamento de Tarefas</h2>
+                <nav class="navegacao" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="dashboard.html" aria-current="page">Minhas Tarefas</a></li>
+                        <li><a href="criar-tarefa.html">Criar Tarefa</a></li>
+                        <li><a href="configuracoes.html">Configurações</a></li>
+                        <li><a href="../index.html" data-acao="sair">Sair</a></li>
+                    </ul>
+                </nav>
+                <p class="sidebar-rodape">© 2025 Projeto Acadêmico</p>
+            </aside>
+            <main class="conteudo-interno">
+                <header class="cabecalho-interno">
+                    <h1>Minhas Tarefas</h1>
+                    <a class="botao botao-primario" href="criar-tarefa.html">Nova Tarefa</a>
+                </header>
+                <section aria-labelledby="titulo-listagem">
+                    <h2 id="titulo-listagem" class="visualmente-oculto">Lista de tarefas</h2>
+                    <div class="grade-tarefas" id="grade-tarefas"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="../js/app.js" defer></script>
+</body>
+</html>
